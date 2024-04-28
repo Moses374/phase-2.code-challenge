@@ -12,7 +12,7 @@ const TransactionForm = ({enter}) => {
         setDescription('')
         setAmount('')
         setDate('')
-        se;tCategory('')
+        setCategory('')
     }
     
   return (
