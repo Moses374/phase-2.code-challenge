@@ -20,7 +20,7 @@ function App() {
         <TransactionTable transactions={transactions} />
       </div>
     </div>
-  )
+  );
 }
 
 
