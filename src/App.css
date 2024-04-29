@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+.App-header {
+  background-color: #483d8b;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+}
+.filter-transaction
+{
+  background-color: #483d8b;
+  min-height: 5vh;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 1rem 3rem;
+  margin: 1rem 0;
+}
+.transaction-form{
+  text-align: center;
+}

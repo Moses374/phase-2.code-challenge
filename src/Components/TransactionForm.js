@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Button from 'react-bootstrap/Button'  
 
 const TransactionForm = ({enter}) => {
     const [description, setDescription]=useState("")
@@ -41,7 +42,7 @@ const TransactionForm = ({enter}) => {
             
 
         </select>
-        <button type='submit'>Add Transaction</button>
+        <Button type='submit' className='"btn btn-primary"'>Add Transaction</Button>
 
       </form>
     </div>

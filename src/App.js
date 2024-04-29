@@ -2,6 +2,7 @@ import React , { useState } from 'react';
 import TransactionTable from './Components/TransactionTable';
 import TransactionForm from './Components/TransactionForm';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   const [transactions, setTransactions] = useState([]);
 
