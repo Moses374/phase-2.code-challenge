@@ -24,7 +24,7 @@ const TransactionTable = ({transactions}) => {
         </tbody>
       </table>
     </div>
-  )
+  );
 };
 
 export default TransactionTable
