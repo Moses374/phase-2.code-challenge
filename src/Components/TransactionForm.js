@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
+import Button from 'react-bootstrap/Button'
 
 const TransactionForm = ({ onsubmit }) => {
   const [description, setDescription] = useState("");
@@ -7,7 +7,7 @@ const TransactionForm = ({ onsubmit }) => {
   const [date, setDate] = useState("");
   const [category, setCategory] = useState("");
     
-  const acceptSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     onsubmit({ description, amount, date, category });
     setDescription('');
@@ -18,7 +18,7 @@ const TransactionForm = ({ onsubmit }) => {
     
   return (
     <div>
-      <form onSubmit={acceptSubmit}>
+      <form onSubmit={handleSubmit}>
         <input
           type='text'
           placeholder='Description'
@@ -44,7 +44,7 @@ const TransactionForm = ({ onsubmit }) => {
           <option value='Travel'>Travel</option>
         </select>
 
-        <Button type='submit' className='btn btn-primary'>Add Transaction</Button>
+        <Button type='submit' className='"btn btn-primary"'>Add Transaction</Button>
       </form>
     </div>
   );

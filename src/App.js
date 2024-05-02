@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
-import TransactionTable from './Components/TransactionTable';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import FilterTransaction from './Components/SearchBar';
 import TransactionForm from './Components/TransactionForm';
+import TransactionTable from './Components/TransactionTable';
+
 import './App.css';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [transactions, setTransactions] = useState([]);
@@ -13,14 +16,20 @@ function App() {
 
   return (
     <div className="App">
+      <div className='App-header'>
       <h1>The Bank of Flatiron</h1>
+      </div>
+      <div class="filter-transaction">
+            <FilterTransaction/>
+            </div>
       <div className='transaction-form'>
         <TransactionForm onsubmit={handleAddTransaction} />
       </div>
-      <div className='transaction-table'>
-        <TransactionTable transactions={transactions} />
+      <div className='table'>
+        <TransactionTable Transactions={transactions} />
       </div>
     </div>
+    
   );
 };
 

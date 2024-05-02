@@ -1,4 +1,6 @@
 import React,{useState} from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from "react-bootstrap/Button";
 
 const FilterTransactions=({onChange})=>{
 
@@ -16,9 +18,9 @@ return(
         value={searchTerm}
         onChange={handleChange}
         />
-        <button onClick={handleSearch}>Search</button>
+        <Button onClick={handleSearch}>Search</Button>
     </div>
 );
 
 }
-export default FilterTransactionsComponent
+export default FilterTransactions

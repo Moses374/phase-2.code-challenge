@@ -1,10 +1,9 @@
 import React from 'react'
-
-const TransactionTable = ({transactions}) => {
+import Table from'react-bootstrap/Table';
+const TransactionTable = ({Transactions}) => {
   return (
-    <div>
-      <table>
-        <thead>
+    <Table striped>
+              <thead>
             <tr>
                 <th>Date</th>
                 <th>Description</th>
@@ -13,17 +12,17 @@ const TransactionTable = ({transactions}) => {
             </tr>
         </thead>
         <tbody>
-            {transactions.map((transaction, index)=>(
-            <tr key={index}>
-                <td>{transaction.date}</td>
-                <th>{transaction.description}</th>
-                <th>{transaction.amount}</th>
-                <th>{transaction.category}</th>
+            {Transactions.map((transaction)=>(
+            <tr key={transaction.id}>
+                <td className='center'>{transaction.date}</td>
+                <td className='center'>{transaction.description}</td>
+                <td className='center'>{transaction.amount}</td>
+                <td className='center'>{transaction.category}</td>
             </tr>
             ))};
         </tbody>
-      </table>
-    </div>
+      </Table>
+    
   );
 };
 
